@@ -2,11 +2,13 @@ import React from 'react';
 import Credit from './Credit';
 import SideItems from './SideItems';
 import Logo from './Logo';
+import Header from './Header';
 
 const SideNavbar = () => {
     return (
         <div className="flex flex-col h-full">
             <Logo />
+
             <ul className="p-2 list-none flex-1">
                 <SideItems iconName='carbon:home' text='Home' />
                 <SideItems iconName='carbon:shopping-cart' text='Orders' />
@@ -21,6 +23,8 @@ const SideNavbar = () => {
                 <SideItems iconName='pajamas:appearance' text='Appearance' />
                 <SideItems iconName='gravity-ui:thunderbolt' text='Plugins' />
             </ul>
+
+
             <Credit />
         </div>
     )
