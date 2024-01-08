@@ -4,7 +4,7 @@ const Header = () => {
     return (
         <div className="py-4 px-8  border-b border-[#ccc] flex justify-between bg-white   ">
             <div className="flex items-center gap-3">
-                <div className="text-[20px] font-medium ">Payouts</div>
+                <div className="text-[20px] font-medium ">Payments</div>
                 <div className="mt-1 flex gap-[6px] text-[12px] cursor:pointer text-[#71717a] items-center justify-center ">
                     <div className="">
                         <iconify-icon icon="ph:question" width="22" height="22"></iconify-icon>
