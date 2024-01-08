@@ -64,13 +64,13 @@ const Transaction = () => {
                     </div>
                 </div>
 
-                <div className="mt-[10px] w-full">
-                    <table className='w-full text-[14px] border-collapse' {...getTableProps()}>
+                <div className="mt-[10px] ">
+                    <table className='w-full  text-[14px] border-collapse' {...getTableProps()}>
                         <thead className='bg-[#f7f7f7] text-[#71717a] font-[400] text-left '>
                             {headerGroups.map((headerGroup, index) => (
-                                <tr className='last:border-0 border-b-[2px] border-[#f7f7f7]' key={index} {...headerGroup.getHeaderGroupProps()}>
+                                <tr className='flex justify-between items-center last:border-0 border-b-[2px] border-[#f7f7f7]' key={index} {...headerGroup.getHeaderGroupProps()}>
                                     {headerGroup.headers.map((column, columnIndex) => (
-                                        <th className='last:text-right py-[14px]  px-3 text-[#4d4d4d] ' key={columnIndex} {...column.getHeaderProps()}>
+                                        <th className={` py-[14px]  px-3 text-[#4d4d4d] ${columnIndex === 1 ? 'ml-14' : ''} ${columnIndex === 2 ? 'ml-12' : ''}`} key={columnIndex} {...column.getHeaderProps()}>
                                             {column.render("Header")}
                                         </th>
                                     ))}
@@ -81,9 +81,9 @@ const Transaction = () => {
                             {rows.map((row, index) => {
                                 prepareRow(row);
                                 return (
-                                    <tr key={index} {...row.getRowProps()}>
+                                    <tr className='flex justify-between items-center ' key={index} {...row.getRowProps()}>
                                         {row.cells.map((cell, cellIndex) => (
-                                            <td className={`last:text-right py-[14px] px-3 pr-20 ${cellIndex === 0 ? 'text-[#146eb4]' : ''}`} key={cellIndex} {...cell.getCellProps()}>
+                                            <td className={`last:text-right  last:pr-   py-[14px] px-3  ${cellIndex === 0 ? 'text-[#146eb4]' : ''}`} key={cellIndex} {...cell.getCellProps()}>
                                                 {cell.render("Cell")}
                                             </td>
                                         ))}
