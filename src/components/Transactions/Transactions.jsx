@@ -1,7 +1,6 @@
 import React from 'react'
 import { useTable } from "react-table";
 import dukanData from '../../utils/MOCK_DATA.json'
-import './Styles.css'
 const Transaction = () => {
     const data = React.useMemo(() => dukanData, []);
     const columns = React.useMemo(
@@ -65,8 +64,34 @@ const Transaction = () => {
                     </div>
                 </div>
 
-                <div className="mt-[10px] ">
-
+                <div className="mt-[10px] w-full">
+                    <table className='w-full text-[14px] border-collapse' {...getTableProps()}>
+                        <thead className='bg-[#f7f7f7] text-[#71717a] font-[400] text-left '>
+                            {headerGroups.map((headerGroup, index) => (
+                                <tr className='last:border-0 border-b-[2px] border-[#f7f7f7]' key={index} {...headerGroup.getHeaderGroupProps()}>
+                                    {headerGroup.headers.map((column, columnIndex) => (
+                                        <th className='last:text-right py-[14px]  px-3 text-[#4d4d4d] ' key={columnIndex} {...column.getHeaderProps()}>
+                                            {column.render("Header")}
+                                        </th>
+                                    ))}
+                                </tr>
+                            ))}
+                        </thead>
+                        <tbody {...getTableBodyProps()}>
+                            {rows.map((row, index) => {
+                                prepareRow(row);
+                                return (
+                                    <tr key={index} {...row.getRowProps()}>
+                                        {row.cells.map((cell, cellIndex) => (
+                                            <td className={`last:text-right py-[14px] px-3 ${cellIndex === 0 ? 'text-[#146eb4]' : ''}`} key={cellIndex} {...cell.getCellProps()}>
+                                                {cell.render("Cell")}
+                                            </td>
+                                        ))}
+                                    </tr>
+                                );
+                            })}
+                        </tbody>
+                    </table>
                 </div>
             </div>
 
