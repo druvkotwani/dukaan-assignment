@@ -1,13 +1,13 @@
-import Header from "./components/Header";
+import Header from "./components/Header/Header";
 import Overview from "./components/Overview/Overview";
-import SideNavbar from "./components/SideNavbar";
+import SideNavbar from "./components/SideBar/SideNavbar";
 
 export default function App() {
   return (
     <main className="flex">
-      <aside className="sticky inset-0 w-[224px] bg-[#1e2640] h-screen text-[#ccc]">
+      <div className="sticky inset-0 w-[224px] bg-[#1e2640] h-screen text-[#ccc]">
         <SideNavbar />
-      </aside>
+      </div>
       <div className='flex-1 overflow-auto'>
         <Header />
         <Overview />

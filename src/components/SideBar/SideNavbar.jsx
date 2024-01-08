@@ -2,7 +2,7 @@ import React from 'react';
 import Credit from './Credit';
 import SideItems from './SideItems';
 import Logo from './Logo';
-import Header from './Header';
+import Header from '../Header/Header';
 
 const SideNavbar = () => {
     return (
