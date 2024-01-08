@@ -1,6 +1,7 @@
 import React from 'react'
 import { useTable } from "react-table";
 import dukanData from '../../utils/MOCK_DATA.json'
+import Pagination from './Pagination';
 const Transaction = () => {
     const data = React.useMemo(() => dukanData, []);
     const columns = React.useMemo(
@@ -94,7 +95,7 @@ const Transaction = () => {
                     </table>
                 </div>
             </div>
-
+            <Pagination />
         </section>
     );
 }
