@@ -83,7 +83,7 @@ const Transaction = () => {
                                 return (
                                     <tr key={index} {...row.getRowProps()}>
                                         {row.cells.map((cell, cellIndex) => (
-                                            <td className={`last:text-right py-[14px] px-3 ${cellIndex === 0 ? 'text-[#146eb4]' : ''}`} key={cellIndex} {...cell.getCellProps()}>
+                                            <td className={`last:text-right py-[14px] px-3 pr-20 ${cellIndex === 0 ? 'text-[#146eb4]' : ''}`} key={cellIndex} {...cell.getCellProps()}>
                                                 {cell.render("Cell")}
                                             </td>
                                         ))}
