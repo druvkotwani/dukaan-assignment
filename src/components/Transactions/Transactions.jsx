@@ -33,7 +33,7 @@ const Transaction = () => {
         <section className="px-8">
             <div className="text-[20px] font-medium">Transactions | This Month</div>
 
-            <div className="mt-5 bg-white rounded-md py-2 px-[10px] ">
+            <div className="mb-4 mt-5 bg-white rounded-md py-2 px-[10px] ">
                 <div className="flex justify-between items-center">
                     <div className="py-[6px] pr-2 pl-3 border border-[#ccc] rounded-sm flex gap-[6px] items-center w-[240px] text-[#71717a]" >
                         <svg width="18" height="18" xmlns="http://www.w3.org/2000/svg" fill="none"
@@ -82,7 +82,7 @@ const Transaction = () => {
                             {rows.map((row, index) => {
                                 prepareRow(row);
                                 return (
-                                    <tr className='flex justify-between items-center ' key={index} {...row.getRowProps()}>
+                                    <tr className='border-b border-[#f7f7f7] flex justify-between items-center ' key={index} {...row.getRowProps()}>
                                         {row.cells.map((cell, cellIndex) => (
                                             <td className={`last:text-right  last:pr-   py-[14px] px-3  ${cellIndex === 0 ? 'text-[#146eb4]' : ''}`} key={cellIndex} {...cell.getCellProps()}>
                                                 {cell.render("Cell")}
@@ -94,8 +94,8 @@ const Transaction = () => {
                         </tbody>
                     </table>
                 </div>
+                <Pagination />
             </div>
-            <Pagination />
         </section>
     );
 }
