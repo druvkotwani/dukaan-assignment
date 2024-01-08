@@ -71,8 +71,17 @@ const Transaction = () => {
                             {headerGroups.map((headerGroup, index) => (
                                 <tr className='flex justify-between items-center last:border-0 border-b-[2px] border-[#f7f7f7]' key={index} {...headerGroup.getHeaderGroupProps()}>
                                     {headerGroup.headers.map((column, columnIndex) => (
-                                        <th className={` py-[14px]  px-3 text-[#4d4d4d] ${columnIndex === 1 ? 'ml-14' : ''} ${columnIndex === 2 ? 'ml-12' : ''}`} key={columnIndex} {...column.getHeaderProps()}>
+                                        <th className={`last:px-0 last:pr-1 flex justify-center items-center py-[14px]  px-3 text-[#4d4d4d] ${columnIndex === 1 ? 'ml-20' : ''} ${columnIndex === 2 ? 'ml-20' : ''} `} key={columnIndex} {...column.getHeaderProps()}>
                                             {column.render("Header")}
+                                            {column.render("Header") === 'Transaction Fees' && (
+                                                <span className="ml-1 mt-2 ">
+                                                    <iconify-icon icon="material-symbols-light:info-outline" width="20" height="20"></iconify-icon>
+                                                </span>
+                                            )}
+                                            {column.render("Header") === 'Order Date' && (
+                                                <span className="ml-1 mt-2 ">
+                                                    <iconify-icon icon="mingcute:down-small-fill" width="20" height="20"></iconify-icon>                                                    </span>
+                                            )}
                                         </th>
                                     ))}
                                 </tr>
