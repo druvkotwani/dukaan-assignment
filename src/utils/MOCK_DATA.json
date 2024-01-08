@@ -1,0 +1,122 @@
+[
+  {
+    "order_ID": 1,
+    "order_date": "31.07.2023",
+    "order_amount": "$1818.66",
+    "transaction_fees": "$3.27"
+  },
+  {
+    "order_ID": 2,
+    "order_date": "05.04.2023",
+    "order_amount": "$1588.11",
+    "transaction_fees": "$1.97"
+  },
+  {
+    "order_ID": 3,
+    "order_date": "14.06.2023",
+    "order_amount": "$1728.87",
+    "transaction_fees": "$4.41"
+  },
+  {
+    "order_ID": 4,
+    "order_date": "22.07.2023",
+    "order_amount": "$1840.47",
+    "transaction_fees": "$2.10"
+  },
+  {
+    "order_ID": 5,
+    "order_date": "24.08.2023",
+    "order_amount": "$1960.54",
+    "transaction_fees": "$3.97"
+  },
+  {
+    "order_ID": 6,
+    "order_date": "11.12.2023",
+    "order_amount": "$2105.42",
+    "transaction_fees": "$0.54"
+  },
+  {
+    "order_ID": 7,
+    "order_date": "28.07.2023",
+    "order_amount": "$1161.08",
+    "transaction_fees": "$0.59"
+  },
+  {
+    "order_ID": 8,
+    "order_date": "01.09.2023",
+    "order_amount": "$2167.37",
+    "transaction_fees": "$3.78"
+  },
+  {
+    "order_ID": 9,
+    "order_date": "14.03.2023",
+    "order_amount": "$1759.86",
+    "transaction_fees": "$7.84"
+  },
+  {
+    "order_ID": 10,
+    "order_date": "13.04.2023",
+    "order_amount": "$1516.49",
+    "transaction_fees": "$0.90"
+  },
+  {
+    "order_ID": 11,
+    "order_date": "04.08.2023",
+    "order_amount": "$1335.59",
+    "transaction_fees": "$9.94"
+  },
+  {
+    "order_ID": 12,
+    "order_date": "22.06.2023",
+    "order_amount": "$1616.43",
+    "transaction_fees": "$6.29"
+  },
+  {
+    "order_ID": 13,
+    "order_date": "25.01.2023",
+    "order_amount": "$1461.21",
+    "transaction_fees": "$4.44"
+  },
+  {
+    "order_ID": 14,
+    "order_date": "18.01.2023",
+    "order_amount": "$1812.55",
+    "transaction_fees": "$3.11"
+  },
+  {
+    "order_ID": 15,
+    "order_date": "11.09.2023",
+    "order_amount": "$1306.00",
+    "transaction_fees": "$2.29"
+  },
+  {
+    "order_ID": 16,
+    "order_date": "31.01.2023",
+    "order_amount": "$2150.90",
+    "transaction_fees": "$8.16"
+  },
+  {
+    "order_ID": 17,
+    "order_date": "19.04.2023",
+    "order_amount": "$1959.13",
+    "transaction_fees": "$5.40"
+  },
+  {
+    "order_ID": 18,
+    "order_date": "20.05.2023",
+    "order_amount": "$1924.44",
+    "transaction_fees": "$3.36"
+  },
+  {
+    "order_ID": 19,
+    "order_date": "30.09.2023",
+    "order_amount": "$1576.35",
+    "transaction_fees": "$2.96"
+  },
+  {
+    "order_ID": 20,
+    "order_date": "23.01.2023",
+    "order_amount": "$1380.70",
+    "transaction_fees": "$2.88"
+  }
+]

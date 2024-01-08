@@ -1,6 +1,7 @@
 import Header from "./components/Header/Header";
 import Overview from "./components/Overview/Overview";
 import SideNavbar from "./components/SideBar/SideNavbar";
+import Transaction from "./components/Transactions/Transactions";
 
 export default function App() {
   return (
@@ -11,6 +12,7 @@ export default function App() {
       <div className='flex-1 overflow-auto'>
         <Header />
         <Overview />
+        <Transaction />
       </div>
     </main>
 
