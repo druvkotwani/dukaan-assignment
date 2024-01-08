@@ -37,7 +37,7 @@ const Transaction = () => {
                 <div className="flex justify-between items-center">
                     <div className="py-[6px] pr-2 pl-3 border border-[#ccc] rounded-sm flex gap-[6px] items-center w-[240px] text-[#71717a]" >
                         <svg width="18" height="18" xmlns="http://www.w3.org/2000/svg" fill="none"
-                            viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="svg-search-icon">
+                            viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="">
                             <path strokeLinecap="round" strokeLinejoin="round"
                                 d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
                         </svg>
@@ -48,7 +48,7 @@ const Transaction = () => {
                             Sort
                             <svg height="16px" width="16px" xmlns="http://www.w3.org/2000/svg" fill="none"
                                 viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor"
-                                className="svg-up-down-icon">
+                                className="">
                                 <path strokeLinecap="round" strokeLinejoin="round"
                                     d="M3 7.5L7.5 3m0 0L12 7.5M7.5 3v13.5m13.5 0L16.5 21m0 0L12 16.5m4.5 4.5V7.5" />
                             </svg>
