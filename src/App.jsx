@@ -7,9 +7,9 @@ export default function App() {
       <aside className="sticky inset-0 w-[224px] bg-[#1e2640] h-screen text-[#ccc]">
         <SideNavbar />
       </aside>
-      <section className='flex-1 overflow-auto'>
+      <div className='flex-1 overflow-auto'>
         <Header />
-      </section>
+      </div>
     </main>
 
   )
