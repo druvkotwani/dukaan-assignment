@@ -33,7 +33,7 @@ const Header = () => {
                 <div className="flex items-center justify-center bg-[#dfdddd] h-10 w-10 rounded-full cursor-pointer text-[#3f3f46] " >
                     <iconify-icon icon="gridicons:speaker" width="22" height="22"></iconify-icon>                </div>
                 <div className="flex items-center justify-center bg-[#dfdddd] h-10 w-10 rounded-full cursor-pointer text-[#3f3f46] ">
-                    <iconify-icon icon="gridicons:dropdown" width="22" height="22"></iconify-icon>
+                    <iconify-icon icon="icon-park-solid:down-one" width="22" height="22"></iconify-icon>
                 </div>
             </div>
 

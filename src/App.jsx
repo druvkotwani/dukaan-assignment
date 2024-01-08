@@ -1,4 +1,5 @@
 import Header from "./components/Header";
+import Overview from "./components/Overview/Overview";
 import SideNavbar from "./components/SideNavbar";
 
 export default function App() {
@@ -9,6 +10,7 @@ export default function App() {
       </aside>
       <div className='flex-1 overflow-auto'>
         <Header />
+        <Overview />
       </div>
     </main>
 
